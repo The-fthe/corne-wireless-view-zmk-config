@@ -10,17 +10,6 @@
 
 / {
     behaviors {
-        modalth: modalth {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MODALTH";
-            bindings =
-                <&kp D>,
-                <&kp LEFT_ALT>;
-
-            #binding-cells = <0>;
-            mods = <()>;
-            keep-mods = <(MOD_LCTL)>;
-        };
     };
 
     keymap {
