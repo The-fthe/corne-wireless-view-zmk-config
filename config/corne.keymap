@@ -12,6 +12,29 @@
     behaviors {
     };
 
+    macros {
+        controlD: controlD {
+            compatible = "zmk,behavior-macro";
+            label = "CONTROLD";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_CONTROL>,
+                <&macro_press>,
+                <&kp D>,
+                <&macro_tap>;
+        };
+        controlF: controlF {
+            compatible = "zmk,behavior-macro";
+            label = "CONTROLF";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp F>,
+                <&macro_tap>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,10 +46,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-       &kp TAB  &kp Q  &kp W                      &kp E  &kp R      &kp T      &kp Y  &kp U                     &kp I    &kp O          &kp P                   &kp BSPC
-    &kp ESCAPE  &kp A  &kp S                      &kp D  &kp F      &kp G      &kp H  &kp J                     &kp K    &kp L  &kp SEMICOLON                &lt 3 COLON
-&sk LEFT_SHIFT  &kp Z  &kp X                      &kp C  &kp V      &kp B      &kp N  &kp M                 &kp COMMA  &kp DOT       &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
-                              &mt LEFT_CONTROL LEFT_WIN  &sl 2  &kp SPACE    &kp RET  &sl 1  &mt LEFT_ALT PRINTSCREEN
+       &kp TAB  &kp Q  &kp W                      &kp E      &kp R      &kp T      &kp Y  &kp U                     &kp I    &kp O          &kp P                   &kp BSPC
+    &kp ESCAPE  &kp A  &kp S                  &controlD  &controlF      &kp G      &kp H  &kp J                     &kp K    &kp L  &kp SEMICOLON                &lt 3 COLON
+&kp LEFT_SHIFT  &kp Z  &kp X                      &kp C      &kp V      &kp B      &kp N  &kp M                 &kp COMMA  &kp DOT       &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
+                              &mt LEFT_CONTROL LEFT_WIN      &sl 2  &kp SPACE    &kp RET  &sl 1  &mt LEFT_ALT PRINTSCREEN
             >;
         };
 
