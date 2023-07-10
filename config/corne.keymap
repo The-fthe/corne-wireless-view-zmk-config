@@ -18,20 +18,20 @@
             label = "CONTROLD";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_CONTROL>,
-                <&macro_press>,
                 <&kp D>,
-                <&macro_tap>;
+                <&macro_tap>,
+                <&kp LEFT_CONTROL>,
+                <&macro_press>;
         };
         controlF: controlF {
             compatible = "zmk,behavior-macro";
             label = "CONTROLF";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_ALT>,
-                <&macro_press>,
                 <&kp F>,
-                <&macro_tap>;
+                <&macro_tap>,
+                <&kp LEFT_ALT>,
+                <&macro_press>;
         };
     };
 
