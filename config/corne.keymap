@@ -26,10 +26,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-       &kp TAB             &kp Q               &kp W                      &kp E               &kp R      &kp T      &kp Y             &kp U                  &kp I           &kp O                    &kp P                   &kp BSPC
-    &kp ESCAPE  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S         &mt LEFT_GUI LC(D)  &mt LEFT_ALT LA(F)      &kp G      &kp H  &mt LEFT_SHIFT J    &mt RIGHT_CONTROL K  &mt LEFT_GUI L  &mt RIGHT_ALT SEMICOLON                &lt 3 COLON
-&kp LEFT_SHIFT             &kp Z               &kp X                      &kp C               &kp V      &kp B      &kp N             &kp M              &kp COMMA         &kp DOT                 &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
-                                                      &mt LEFT_CONTROL LEFT_WIN               &sl 2  &kp SPACE    &kp RET             &sl 1  &mt LEFT_ALT C_REPEAT
+       &kp TAB             &kp Q               &kp W                      &kp E           &kp R      &kp T      &kp Y              &kp U                  &kp I           &kp O                    &kp P                   &kp BSPC
+    &kp ESCAPE  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S             &mt LEFT_GUI D  &mt LEFT_ALT F      &kp G      &kp H  &mt RIGHT_SHIFT J    &mt RIGHT_CONTROL K  &mt LEFT_GUI L  &mt RIGHT_ALT SEMICOLON                &lt 3 COLON
+&kp LEFT_SHIFT             &kp Z               &kp X                      &kp C           &kp V      &kp B      &kp N              &kp M              &kp COMMA         &kp DOT                 &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
+                                                      &mt LEFT_CONTROL LEFT_WIN           &sl 2  &kp SPACE    &kp RET              &sl 1  &mt LEFT_ALT C_REPEAT
             >;
         };
 
