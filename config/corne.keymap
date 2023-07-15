@@ -65,20 +65,5 @@
                           &none   &to 0   &none     &none   &none   &none
             >;
         };
-
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-    &trans      &kp EXCL        &kp AT         &kp POUND    &kp DOLLAR   &kp PERCENT    &kp LS(CARET)  &kp N0  &kp LS(N8)  &kp LS(N9)  &kp LS(UNDERSCORE)       &kp BSPC
-    &trans        &kp N0        &kp LT  &kp GREATER_THAN        &kp N0        &kp N0        &kp MINUS  &kp N0      &kp N0      &kp N0              &kp N0         &kp N0
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &kp N0  &kp N0      &kp N0      &kp N0       &kp LS(QMARK)  &kp LS(EQUAL)
-                                                  &trans        &trans     &kp SPACE          &kp RET  &trans    &kp RALT
-            >;
-        };
     };
 };
