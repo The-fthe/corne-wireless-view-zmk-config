@@ -35,9 +35,9 @@
 
         raise_layer_eng {
             bindings = <
-&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR   &kp PERCENT     &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp GRAVE  &trans
-&trans      &kp AT_SIGN      &kp BACKSLASH  &kp PIPE    &kp PLUS  &kp ASTERISK         &kp MINUS         &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp TILDE  &trans
-&trans            &none              &none     &none       &none         &none    &kp UNDERSCORE         &kp CARET        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp QUESTION   &kp C
+&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR   &kp PERCENT     &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp GRAVE         &trans
+&trans      &kp AT_SIGN      &kp BACKSLASH  &kp PIPE    &kp PLUS  &kp ASTERISK         &kp MINUS         &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp TILDE         &trans
+&trans            &none              &none     &none       &none         &none    &kp UNDERSCORE         &kp CARET        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp QUESTION  &kp BACKSLASH
                                               &trans      &trans        &trans            &trans            &trans                &trans
             >;
         };
