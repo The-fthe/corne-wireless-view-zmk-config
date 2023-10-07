@@ -10,16 +10,15 @@
 
 / {
     behaviors {
-        homerow_mod: homerow_mod {
+        HOMEROW_MOD: HOMEROW_MOD {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            flavor = "tap-unless-interrupted";
-            hold-trigger-key-positions = <28 1 2 3 4 5 13 14 15 16 17 25 26 27 28 29 36 37 38 0 12 24>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -38,7 +37,7 @@
 
             bindings = <
 &kp LEFT_WIN    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y    &kp U  &kp I         &kp O    &kp P                          &kp BSPC
-&kp ESC         &kp A  &kp S  &kp D             &kp F  &kp G        &kp H    &kp J  &kp K         &kp L    &homerow_mod SEMI RIGHT_SHIFT  &lt 3 COLON
+&kp ESC         &kp A  &kp S  &kp D             &kp F  &kp G        &kp H    &kp J  &kp K         &kp L    &HOMEROW_MOD RIGHT_SHIFT SEMI  &lt 3 COLON
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N    &kp M  &kp COMMA     &kp DOT  &kp FSLH                       &kp TAB
                               &kp LEFT_CONTROL  &sl 2  &kp SPACE    &kp RET  &sl 1  &kp LEFT_ALT
             >;
