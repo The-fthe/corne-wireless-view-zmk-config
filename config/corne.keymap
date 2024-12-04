@@ -48,7 +48,7 @@
             flavor = "balanced";
             quick-tap-ms = <150>;
             require-prior-idle-ms = <120>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <174>;
         };
 
         RIGHT_HAND_HRMs_FAST: RIGHT_HAND_HRMs_FAST {
