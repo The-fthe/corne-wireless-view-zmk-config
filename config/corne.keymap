@@ -23,6 +23,7 @@
             require-prior-idle-ms = <10>;
             hold-trigger-on-release;
         };
+
         LAYER_HRM: LAYER_HRM {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_HRM";
@@ -35,9 +36,6 @@
             flavor = "balanced";
             hold-trigger-on-release;
         };
-    };
-
-    macros {
     };
 
     keymap {
@@ -62,7 +60,7 @@
             bindings = <
 &trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT     &kp AMPERSAND   &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE     &trans
 &trans  &kp AT_SIGN      &kp BACKSLASH      &kp PIPE  &kp PLUS    &kp ASTERISK    &kp MINUS       &kp EQUAL         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE     &trans
-&trans  &none            &none              &none     &none       &none           &kp UNDERSCORE  &kp CARET         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION  &trans
+&trans  &trans           &none              &trans    &trans      &trans          &kp UNDERSCORE  &kp CARET         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION  &trans
                                             &trans    &trans      &trans          &trans          &trans            &trans
             >;
         };
@@ -76,8 +74,8 @@
 
             bindings = <
 &trans  &kp N1  &kp N2         &kp N3         &kp N4         &kp N5            &kp N6      &kp N7             &kp N8        &kp N9      &kp N0         &trans
-&trans  &none   &kp LG(SPACE)  &kp LA(SPACE)  &kp LA(SPACE)  &kp LC(INSERT)    &kp LEFT    &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT   &kp PAGE_UP    &trans
-&trans  &trans  &none          &none          &none          &kp LS(INS)       &kp INSERT  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp DELETE  &kp PAGE_DOWN  &trans
+&trans  &trans  &kp LG(SPACE)  &kp LA(SPACE)  &kp LC(SPACE)  &kp LC(INSERT)    &kp LEFT    &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT   &kp PAGE_UP    &trans
+&trans  &trans  &trans         &trans         &trans         &kp LS(INS)       &kp INSERT  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp DELETE  &kp PAGE_DOWN  &trans
                                &trans         &trans         &kp SPACE         &kp RET     &trans             &trans
             >;
         };
@@ -88,6 +86,15 @@
 &trans  &trans      &trans        &trans        &trans        &trans          &kp F11  &kp F12  &kp CAPS  &trans  &trans   &trans
 &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &trans   &trans   &trans    &trans  &trans   &trans
                                   &trans        &trans        &trans          &trans   &trans   &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
